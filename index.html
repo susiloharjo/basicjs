@@ -6,34 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Belajar JS</title>
 </head>
-<body>
-<!-- <button onclick="pencet()">Ini button</button> -->
-<h4>Operasi penjumlahan menggunakan javascript</h4>
-Masukkan Quantity
-<input type="text" id="qty" value="">
-<br>
-Harganya adalah 2000
-<button onclick="pencet()">Jumlahkan</button>
 
-
-
-<p id="demo"></p>
-
-</body>
-<script>
-
-
-
-// alert(qty);
-
-
-function pencet(){
-qty = document.getElementById('qty').value;
-jumlah = qty * 2000;
-document.getElementById("demo").innerHTML = jumlah;
+<style>
+body {
+  font-family: arial, serif;
 }
-// penjumlahan();
+
+.box {
+margin-left: 40%;
+}
+
+</style>
+<body>
+  <div class="box">
+<!-- <button onclick="pencet()">Ini button</button> -->
+<h4>Simple Cart JS</h4>
+<br>
+
+<img src="img/donut.png" alt="">
+<p>Harga Rp. 2000,00</p>
+<button onclick="up()" id="up">+</button> | <button onclick="down()" id="up">-</button><p>
+<input onchange="jumlah()" type="number" id="qty" placeholder="quantity" value="">
+<p><button onclick="reset()">reset</button></p>
+<p>
+  Total harga adalah <p id="demo"></p>
+</p>
+<button onclick="pencet()">Jumlahkan</button>
+</div>
 
 
-</script>
+<script src="index.js" charset="utf-8"></script>
+</body>
 </html>
