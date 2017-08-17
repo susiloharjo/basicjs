@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belajar JS</title>
+</head>
+<body>
+<!-- <button onclick="pencet()">Ini button</button> -->
+<h4>Operasi penjumlahan menggunakan javascript</h4>
+Masukkan Quantity
+<input type="text" id="qty" value="">
+<br>
+Harganya adalah 2000
+<button onclick="pencet()">Jumlahkan</button>
+
+
+
+<p id="demo"></p>
+
+</body>
+<script>
+
+
+
+// alert(qty);
+
+
+function pencet(){
+qty = document.getElementById('qty').value;
+jumlah = qty * 2000;
+document.getElementById("demo").innerHTML = jumlah;
+}
+// penjumlahan();
+
+
+</script>
+</html>
