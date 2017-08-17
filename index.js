@@ -9,7 +9,7 @@ function pencet(){
 function up(){
   var qty = document.getElementById('qty').value;
   var jumlah = (qty + 1) * 2000;
-  var sisa = (qty + 1);
+  var sisa = (parseInt(qty) + 1);
   document.getElementById("demo").innerHTML = "Rp. " + jumlah;
   document.getElementById("qty").value = sisa;
 }
